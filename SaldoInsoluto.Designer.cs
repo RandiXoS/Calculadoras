@@ -40,17 +40,16 @@ namespace Calculadoras
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label5.Location = new System.Drawing.Point(23, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(352, 42);
+            this.label5.Size = new System.Drawing.Size(357, 31);
             this.label5.TabIndex = 10;
             this.label5.Text = "Calculadora de Préstamos";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -58,10 +57,10 @@ namespace Calculadoras
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(33, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 25);
+            this.label1.Size = new System.Drawing.Size(170, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "Monto de Préstamo:";
             // 
@@ -77,30 +76,30 @@ namespace Calculadoras
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(33, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Plazo en Años";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(189, 166);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(197, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 25);
+            this.label3.Size = new System.Drawing.Size(19, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "o";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(278, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 25);
+            this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 15;
             this.label4.Text = "Meses";
             // 
@@ -125,10 +124,10 @@ namespace Calculadoras
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(33, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 25);
+            this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 19;
             this.label6.Text = "Interés:";
             // 
@@ -144,7 +143,7 @@ namespace Calculadoras
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button1.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(247, 262);
             this.button1.Name = "button1";
@@ -154,22 +153,13 @@ namespace Calculadoras
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(247, 338);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(117, 22);
-            this.richTextBox1.TabIndex = 22;
-            this.richTextBox1.Text = "";
-            // 
             // SaldoInsoluto
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(390, 361);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(390, 373);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
@@ -184,6 +174,7 @@ namespace Calculadoras
             this.Name = "SaldoInsoluto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monto de Préstamo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SaldoInsoluto_FormClosed);
             this.Load += new System.EventHandler(this.SaldoInsoluto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,6 +193,5 @@ namespace Calculadoras
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

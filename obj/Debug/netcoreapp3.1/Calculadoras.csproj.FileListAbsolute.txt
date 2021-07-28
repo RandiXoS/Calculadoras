@@ -17,3 +17,26 @@ C:\Users\Randi\Desktop\Projects\App Desktops\WindowsForms\Calculadoras\obj\Debug
 C:\Users\Randi\Desktop\Projects\App Desktops\WindowsForms\Calculadoras\obj\Debug\netcoreapp3.1\Calculadoras.pdb
 C:\Users\Randi\Desktop\Projects\App Desktops\WindowsForms\Calculadoras\obj\Debug\netcoreapp3.1\Calculadoras.genruntimeconfig.cache
 C:\Users\Randi\Desktop\Projects\App Desktops\WindowsForms\Calculadoras\obj\Debug\netcoreapp3.1\Calculadoras.csprojAssemblyReference.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.exe
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.deps.json
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.runtimeconfig.json
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.runtimeconfig.dev.json
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.dll
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.pdb
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.AssemblyReference.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Ahorro.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.ConvertMonedas.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Deuda.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.IntCompuesto.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Login.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.SaldoInsoluto.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.SelectCalc.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.SignUp.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Tabla_CalcPres.resources
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.GenerateResource.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.AssemblyInfoInputs.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.AssemblyInfo.cs
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.CoreCompileInputs.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.dll
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.pdb
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.genruntimeconfig.cache

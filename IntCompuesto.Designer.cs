@@ -29,10 +29,18 @@ namespace Calculadoras
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // IntCompuesto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "IntCompuesto";
             this.Text = "IntCompuesto";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.IntCompuesto_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

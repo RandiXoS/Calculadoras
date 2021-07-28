@@ -14,5 +14,10 @@ namespace Calculadoras
         {
             InitializeComponent();
         }
+
+        private void IntCompuesto_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Aux.scalc.Show();
+        }
     }
 }

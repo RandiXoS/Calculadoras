@@ -11,7 +11,10 @@ namespace Calculadoras
 {
     public partial class Tabla_CalcPres : Form
     {
-        float cuota = 0;
+        double cuota = 0;
+        double i = 0, it = 0;
+        float p = 0;
+        double c = 0;
         public Tabla_CalcPres()
         {
             InitializeComponent();
@@ -20,27 +23,37 @@ namespace Calculadoras
         
         private void Tabla_CalcPres_Load(object sender, EventArgs e)
         {
+            
             //timer1.Start();
             int count = 0;
-            float saldo;
 
+            i = InfoTable.readInterest;
+            p = InfoTable.readTime;
+            c = InfoTable.readAmount;
+            double auxi = 0;
 
-            DatosTabla.Rows.Add(InfoTable.readTime-1);
+            DatosTabla.Rows.Add((int)p - 1);
 
-            float auxcuota = (float)InfoTable.readAmount / InfoTable.readTime;
-
-            for (int i = 1; i <= InfoTable.readTime; i++)
-            {
-                
-            }
+            //float auxcuota = (float)InfoTable.readAmount / InfoTable.readTime;
+            cuota = InfoTable.readAmount * ((Math.Pow((1 + i), p) * i) / (Math.Pow((1 + i), p) - 1));
+            
             //Bucle para mostrar Información
-            for (int i = 1; i <= InfoTable.readTime; i++)
+            for (int i1 = 1; i1 <= p; i1++)
             {
-                DatosTabla.Rows[count].Cells[0].Value = i;
-                DatosTabla.Rows[count].Cells[1].Value = decimal.Round((decimal)cuota,1);
+                DatosTabla.Rows[count].Cells[0].Value = i1;
+                DatosTabla.Rows[count].Cells[1].Value = ((int)cuota).ToString("N0") + " $";
+                auxi = i * c;
+                it += auxi;
+                DatosTabla.Rows[count].Cells[2].Value = ((int)auxi).ToString("N0") + " $";
+                c = c - (cuota - Convert.ToDouble(auxi));
+                DatosTabla.Rows[count].Cells[3].Value = ((int)c).ToString("N0") + " $";
 
                 count++;
             }
+            tmonto.Text = InfoTable.readAmount.ToString("N0") + " $";
+            tint.Text = ((int)it).ToString("N0") + " $";
+            tmontofinal.Text = ((int)(cuota * p)).ToString("N0") + " $";
+            panel1.Show();
         }
         private void tabla_Paint(object sender, PaintEventArgs e)
         {

@@ -124,7 +124,7 @@ namespace Calculadoras
 
         public void Deuda_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            Aux.scalc.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
