@@ -61,7 +61,7 @@ namespace Calculadoras
         }
         private void SaldoInsoluto_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            Aux.scalc.Show(); 
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
