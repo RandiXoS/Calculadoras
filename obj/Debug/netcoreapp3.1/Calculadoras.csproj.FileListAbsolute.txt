@@ -23,7 +23,6 @@ C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculad
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.runtimeconfig.dev.json
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.dll
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\bin\Debug\netcoreapp3.1\Calculadoras.pdb
-C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.AssemblyReference.cache
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Ahorro.resources
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.ConvertMonedas.resources
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.Deuda.resources
@@ -40,3 +39,4 @@ C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculad
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.dll
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.pdb
 C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.genruntimeconfig.cache
+C:\Users\Randi\Desktop\Bussiness\Calculator_2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.AssemblyReference.cache
