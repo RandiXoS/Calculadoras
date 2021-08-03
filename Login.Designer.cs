@@ -82,11 +82,11 @@ namespace Calculadoras
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(149, 25);
+            this.label3.Location = new System.Drawing.Point(207, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 32);
+            this.label3.Size = new System.Drawing.Size(78, 32);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Inicio de Sesión";
+            this.label3.Text = "Login";
             // 
             // button1
             // 
