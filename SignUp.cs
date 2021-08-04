@@ -6,9 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-//using Microsoft.Office.Interop.Excel;
 using System.Text.RegularExpressions;
-//using SpreadsheetLight;
+using SpreadsheetLight;
 
 namespace Calculadoras
 {
@@ -43,6 +42,100 @@ namespace Calculadoras
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             pass2 = textBox2.Text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            //Evitando que los campos esten vacios
+            if(textBox1.Text == ""|| textBox2.Text == "" || textBox3.Text == "")
+            {
+                MessageBox.Show("Dejaste Campos vacíos", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                //Comprobando que las contraseñas sean iguales
+                if (pass == pass2)
+                {
+                    //-------------------------Codigo para Ingresar al Excel---------------------
+                    
+                    
+                    
+                    int inc = 1;//Cuenta los numeros de usuarios para poder agregar otro
+
+                    //Abriendo Excel creado y sobreescribiendolo en otro nuevo
+                    //Para poder guardarlo
+                    SLDocument ls = new SLDocument(Aux.file);
+                    SLDocument doc = new SLDocument();
+
+
+                    for (int i = 1; i < 3; i++)
+                    {
+                        inc = 1;
+
+                        while (!string.IsNullOrEmpty(ls.GetCellValueAsString(inc, i)))
+                        {
+                            doc.SetCellValue(inc, i, ls.GetCellValueAsString(inc, i));
+
+                            inc++;
+                        }
+                    }
+                    doc.SetCellValue(inc, 1, user);
+                    doc.SetCellValue(inc, 2, pass);
+
+                    //Aplicando Estilos
+                    SLStyle style1 = new SLStyle();
+                    SLStyle style2 = new SLStyle();
+
+                    SLBorder lBorder = new SLBorder();
+
+                    style1.SetFont("Times New Romans", 16);
+                    style2.SetFont("Times New Romans", 14);
+
+                    style1.Border.LeftBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.RightBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.TopBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.BottomBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+
+                    style2.Border.LeftBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.RightBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.TopBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.BottomBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+
+
+
+                    style1.SetHorizontalAlignment(DocumentFormat.OpenXml.Spreadsheet.HorizontalAlignmentValues.Center);
+                    style1.SetVerticalAlignment(DocumentFormat.OpenXml.Spreadsheet.VerticalAlignmentValues.Center);
+                    style2.SetHorizontalAlignment(DocumentFormat.OpenXml.Spreadsheet.HorizontalAlignmentValues.Center);
+
+                    style1.SetFontBold(true);
+
+                    style1.SetPatternFill(DocumentFormat.OpenXml.Spreadsheet.PatternValues.Solid,
+                        ForegroundColor: System.Drawing.Color.ForestGreen,
+                        BackgroundColor: System.Drawing.Color.Black);
+
+                    style2.SetPatternFill(DocumentFormat.OpenXml.Spreadsheet.PatternValues.Solid,
+                       ForegroundColor: System.Drawing.Color.FromArgb(156, 195, 248),
+                       BackgroundColor: System.Drawing.Color.White);
+
+                    doc.SetColumnWidth(1, 2, 85);
+                    doc.SetRowHeight(1, 30);
+                    doc.SetCellStyle(1, 1, 1, 2, style1);
+                    doc.SetCellStyle(2, 1, 200, 2, style2);
+                    //Finalizando Estilos
+
+                    //Guardando
+                    doc.SaveAs(Aux.file);
+
+                    MessageBox.Show("Se ha registrado correctamente", "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            
         }
 
         private void SignUp_FormClosed(object sender, FormClosedEventArgs e)

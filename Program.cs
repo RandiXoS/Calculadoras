@@ -9,6 +9,7 @@ namespace Calculadoras
     public static class Aux
     {
         public static SelectCalc scalc;
+        public static string file = @"C:\Users\Randi\Desktop\Bussiness\Calcv2.0\DataBase\Usuarios.xlsx";
     }
     public static class Program
     {

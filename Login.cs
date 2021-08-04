@@ -6,9 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-//using Microsoft.Office.Interop.Excel;
 using System.Text.RegularExpressions;
-//using SpreadsheetLight;
+using SpreadsheetLight;
 
 namespace Calculadoras
 {
@@ -45,72 +44,20 @@ namespace Calculadoras
             //var appExcel = new Excell.Application();
 
 
-            if (File.Exists(fileLocation))
+            if (textBox1.Text == "" || textBox2.Text == "")
             {
-                //SLDocument excel = new SLDocument(fileLocation);
-                //using (excel)
-                //{
-                //    List<string> l = excel.GetSheetNames();
-                //    textBox1.Text = l[0].Length + "";
-                //}
-                //Workbook workbook = appExcel.Workbooks.Open(fileLocation);
-                //Worksheet sheetexcel = (Worksheet)workbook.Sheets[1];
-                ////workbook.Close();
-
-                ////verificando usuario con el excel
-                //while (c1)
-                //{
-                //    if (string.IsNullOrEmpty(((Excell.Range)sheetexcel.Cells[i, 1]).Value.ToString()))
-                //    {
-
-                //        readexcel = ((Excell.Range)sheetexcel.Cells[i, 1]).Value.ToString();
-                //        if (user == readexcel)
-                //        {
-                //            c1 = false;
-                //            i = 0;
-                //            break;
-
-                //        }
-                //        i++;
-                //    }
-                //}
-                ////Verficando password con el excel
-                //while (c2)
-                //{
-
-                //    if (!string.IsNullOrEmpty(((Excell.Range)sheetexcel.Cells[i, 2]).Value.ToString()))
-                //    {
-                //        readexcel = ((Excell.Range)sheetexcel.Cells[i, 2]).Value.ToString();
-                //        if (pass == readexcel)
-                //        {
-                //            c2 = false;
-                //            i = 0;
-                //            break;
-                //        }
-                //        i++;
-                //    }
-
-                //}
-
-                //if (!c1 && !c2)
-                //{
-                //    MessageBox.Show("Bienvenido" + user, "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    SelectCalc scalc = new SelectCalc();
-                //    Hide();
-                //    scalc.Show();
-                //}
-                //else
-                //{
-                //    c1 = true;
-                //    c2 = true;
-                //    i = 0;
-                //    readexcel = " ";
-                //    MessageBox.Show("Usuario o Contraseña Incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                MessageBox.Show("Dejaste Campos vacíos", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("No se ha encontrado la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (File.Exists(fileLocation))
+                {
+                   
+                }
+                else
+                {
+                    MessageBox.Show("No se ha encontrado la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             textBox1.Text = "";
             textBox2.Text = "";
@@ -120,13 +67,6 @@ namespace Calculadoras
         private void Login_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            //sheetexcel.Cells[4, 1] = "Ada";
-            //sheetexcel.Cells[4, 2] = "Rosa";
-            //textBox1.Text = ((Excell.Range)sheetexcel.Cells[2, 1]).Value.ToString();
-            //textBox2.Text = ((Excell.Range)sheetexcel.Cells[2, 2]).Value.ToString();
-
-            //sheetexcel.SaveAs2(fileLocation);
-
 
         }
 
@@ -189,13 +129,11 @@ namespace Calculadoras
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             user = textBox1.Text;
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             pass = textBox2.Text;
-
         }
     }
 }

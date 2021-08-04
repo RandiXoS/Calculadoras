@@ -50,9 +50,10 @@ namespace Calculadoras
             this.button1.Location = new System.Drawing.Point(162, 259);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 37);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Registrarse";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -69,7 +70,8 @@ namespace Calculadoras
             this.textBox2.Location = new System.Drawing.Point(180, 198);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(189, 23);
-            this.textBox2.TabIndex = 10;
+            this.textBox2.TabIndex = 3;
+            this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
@@ -77,7 +79,7 @@ namespace Calculadoras
             this.textBox1.Location = new System.Drawing.Point(180, 93);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 23);
-            this.textBox1.TabIndex = 9;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -105,7 +107,8 @@ namespace Calculadoras
             this.textBox3.Location = new System.Drawing.Point(180, 141);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(189, 23);
-            this.textBox3.TabIndex = 14;
+            this.textBox3.TabIndex = 2;
+            this.textBox3.UseSystemPasswordChar = true;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4

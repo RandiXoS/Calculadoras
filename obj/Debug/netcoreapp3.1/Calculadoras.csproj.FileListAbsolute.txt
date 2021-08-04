@@ -46,6 +46,13 @@ C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\Calculadoras.r
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\Calculadoras.runtimeconfig.dev.json
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\Calculadoras.dll
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\Calculadoras.pdb
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\SpreadsheetLight.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.AssemblyReference.cache
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.Ahorro.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.ConvertMonedas.resources
@@ -60,6 +67,7 @@ C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.c
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.AssemblyInfoInputs.cache
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.AssemblyInfo.cs
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.CoreCompileInputs.cache
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.CopyComplete
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.dll
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.pdb
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.genruntimeconfig.cache
