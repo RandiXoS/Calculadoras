@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadoras", "Calculadoras.csproj", "{9E3FF37B-6E4A-45FF-A2E9-2DFC77E53FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculadoras", "Calculadoras.csproj", "{9E3FF37B-6E4A-45FF-A2E9-2DFC77E53FE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tips", "Tips", "{29C7C6EA-0CC4-47C1-B4A1-E28CC23904AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

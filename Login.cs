@@ -15,13 +15,13 @@ namespace Calculadoras
     public partial class Login : Form
     {
 
-        string user = "", pass = "", readexcel = " ";
-        bool c1 = true, c2 = true;
+        string user = "", pass = "";
+        int conf = 1;
+        int trying = 3;
 
-        int i = 2;
-        //Excell.Application appExcel = new Excell.Application();
-        public string fileLocation =
-            @"C:\Users\Randi\Desktop\Bussiness\Calcv2.0\DataBase\Usuarios.xlsx";
+        
+        public string fileLocation = @"C:\Users\Randi\Desktop\Bussiness\Calcv2.0\DataBase\Usuarios.xlsx";
+        //string[] lista;
         public Login()
         {
             InitializeComponent();
@@ -29,6 +29,7 @@ namespace Calculadoras
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             textBox1.Text = "";
             textBox2.Text = "";
             SignUp registro = new SignUp();
@@ -43,30 +44,155 @@ namespace Calculadoras
             //scalc.Show();
             //var appExcel = new Excell.Application();
 
+            try
+            {
 
-            if (textBox1.Text == "" || textBox2.Text == "")
-            {
-                MessageBox.Show("Dejaste Campos vacíos", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
                 if (File.Exists(fileLocation))
                 {
-                   
+                    if (textBox1.Text == "" || textBox2.Text == "")
+                    {
+                        MessageBox.Show("Dejaste Campos vacíos", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        SLDocument ls = new SLDocument(Aux.file);
+                        //SLDocument ls = new SLDocument(lista[0]);
+
+                        using (ls)
+                        {
+
+                            string[] datas = new string[] { user, pass };
+                            int inc = 1;
+
+                            for (int i = 1; i <= 2; i++)
+                            {
+                                inc = 1;
+                                while (!string.IsNullOrEmpty(ls.GetCellValueAsString(inc, i)))
+                                {
+                                    if (datas[i - 1] == ls.GetCellValueAsString(inc, i))
+                                    {
+                                        conf++;
+                                    }
+
+                                    inc++;
+                                }
+                            }
+
+                        }
+
+                        //Iniciando
+                        if (conf > 2)
+                        {
+                            trying = 0;
+                            SelectCalc scalc = new SelectCalc();
+                            MessageBox.Show("Ha Iniciado Sesion correctamente\n" +
+                                "Bienvenido " + user, "Inicio Exitoso", MessageBoxButtons.OK, MessageBoxIcon.None);
+
+                            textBox1.Text = "";
+                            textBox2.Text = "";
+
+                            Hide();
+                            scalc.Show();
+                        }
+                        else
+                        {
+                            if (trying <= 1)
+                            {
+                                trying = 0;
+                                MessageBox.Show("Ha superado el numero Maximo de intentos", "Exiting...", MessageBoxButtons.OK,
+                                                                            MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                trying--;
+                                MessageBox.Show("Usuario o Contraseña Incorrectos.", "Error", MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error);
+                                MessageBox.Show("le quedan " + trying + " Intentos.", "Aviso", MessageBoxButtons.OK,
+                                                MessageBoxIcon.Warning);
+                            }
+                        }
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("No se ha encontrado la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                
+                //Reseteando textbox
+                textBox1.Text = "";
+                textBox2.Text = "";
             }
-            textBox1.Text = "";
-            textBox2.Text = "";
+            catch (Exception)
+            {
+                MessageBox.Show("No se encontró la Base de Datos, reinicie la app para crear otra.\n", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
             timer1.Start();
+
+            if(!File.Exists(Aux.file))
+                {
+                    //MessageBox.Show("No se encontró la Base de Datos\n" +"Creando una.....");
+
+                    SLDocument doc = new SLDocument();
+
+
+                    doc.SetCellValue(1, 1, "Usernames");
+                    doc.SetCellValue(1, 2, "Password");
+                    doc.SetCellValue(2, 1, "user");
+                    doc.SetCellValue(2, 2, "1234");
+                    //Aplicando Estilos
+                    SLStyle style1 = new SLStyle();
+                    SLStyle style2 = new SLStyle();
+
+
+
+                    SLBorder lBorder = new SLBorder();
+
+                    style1.SetFont("Times New Romans", 16);
+                    style2.SetFont("Times New Romans", 14);
+
+                    style1.Border.LeftBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.RightBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.TopBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style1.Border.BottomBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+
+                    style2.Border.LeftBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.RightBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.TopBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+                    style2.Border.BottomBorder.BorderStyle = DocumentFormat.OpenXml.Spreadsheet.BorderStyleValues.Thin;
+
+
+
+                    style1.SetHorizontalAlignment(DocumentFormat.OpenXml.Spreadsheet.HorizontalAlignmentValues.Center);
+                    style1.SetVerticalAlignment(DocumentFormat.OpenXml.Spreadsheet.VerticalAlignmentValues.Center);
+                    style2.SetHorizontalAlignment(DocumentFormat.OpenXml.Spreadsheet.HorizontalAlignmentValues.Center);
+
+                    style1.SetFontBold(true);
+
+                    style1.SetPatternFill(DocumentFormat.OpenXml.Spreadsheet.PatternValues.Solid,
+                        ForegroundColor: System.Drawing.Color.ForestGreen,
+                        BackgroundColor: System.Drawing.Color.Black);
+
+                    style2.SetPatternFill(DocumentFormat.OpenXml.Spreadsheet.PatternValues.Solid,
+                       ForegroundColor: System.Drawing.Color.FromArgb(156, 195, 248),
+                       BackgroundColor: System.Drawing.Color.White);
+
+                    doc.SetColumnWidth(1, 2, 85);
+                    doc.SetRowHeight(1, 30);
+                    doc.SetCellStyle(1, 1, 1, 2, style1);
+                    doc.SetCellStyle(2, 1, 200, 2, style2);
+                //Finalizando Estilos
+
+                //Guardando
+
+                if (!File.Exists(Directory.GetCurrentDirectory() + @"\DataBase"))
+                {
+                    Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\DataBase"); 
+                }
+                
+                
+                doc.SaveAs(Aux.file);
+            }
 
         }
 
@@ -129,6 +255,23 @@ namespace Calculadoras
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             user = textBox1.Text;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

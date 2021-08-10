@@ -59,6 +59,7 @@ C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.C
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.Deuda.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.IntCompuesto.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.Login.resources
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.Prestamo.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.SaldoInsoluto.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.SelectCalc.resources
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.SignUp.resources
