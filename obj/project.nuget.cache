@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xRVhN19/ojZqlwRxN19Zg4Rzmyz4KY5y3Lyo08n17ETJQ0e4fvvsEa257fWuzFrwhR1thm4BHHA/81b02sbKsQ==",
+  "dgSpecHash": "7uFjo95yTIykbmCt/JqVoEJ1NG9xv18N4fFxOvjlr4utPXO6jeO1ayNQlzpFCFcUk1EHe9KhyfRsW8R3oIYICw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Randi\\Desktop\\Bussiness\\Calcv2.0\\Calculadoras.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Randi\\.nuget\\packages\\documentformat.openxml\\2.11.3\\documentformat.openxml.2.11.3.nupkg.sha512",
+    "C:\\Users\\Randi\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
     "C:\\Users\\Randi\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Randi\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Randi\\.nuget\\packages\\spreadsheetlight\\3.5.0\\spreadsheetlight.3.5.0.nupkg.sha512",

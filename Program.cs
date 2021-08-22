@@ -12,8 +12,15 @@ namespace Calculadoras
     {
         public static SelectCalc scalc;
         public static string file = Directory.GetCurrentDirectory() + @"\Database\Usuarios_Registrados.xlsx";
-        
-       // public static 
+
+
+        public static string BTC;
+        public static string DOP;
+        public static string USD;
+        public static string Eur;
+        public static string Venz;
+
+        // public static 
     }
     public static class Program
     {
@@ -29,8 +36,8 @@ namespace Calculadoras
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            //Application.Run(new ConvertMonedas);
-            Application.Run(new Prestamo());
+            Application.Run(new Ahorro());
+            //Application.Run(new SelectCalc());
         }
 
 

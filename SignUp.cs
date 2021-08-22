@@ -160,6 +160,30 @@ namespace Calculadoras
             }
         }
 
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ((char)Keys.Enter))
+            {
+                button1_Click(new object(), new EventArgs());
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ((char)Keys.Enter))
+            {
+                button1_Click(new object(), new EventArgs());
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ((char)Keys.Enter))
+            {
+                button1_Click(new object(), new EventArgs());
+            }
+        }
+
         private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
         {
             

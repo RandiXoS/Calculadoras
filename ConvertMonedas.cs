@@ -5,16 +5,34 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Web;
+using HtmlAgilityPack;
 
 namespace Calculadoras
 {
     public partial class ConvertMonedas : Form
     {
-        int c1 = 0, c2 = 0;
-        int count1 = 0, count2 = 0;
+
+        WebBrowser web = new WebBrowser();
+        //Urls
+        string[] urllist = new string[]
+        {
+            "https://cuex.com/es/dop-btc",
+            "https://cuex.com/es/usd-btc",
+            "https://cuex.com/es/eur-btc",
+            "https://cuex.com/es/jpy-btc"
+        };
+        string[] saveurl = new string[6];
+        
+        //variables auxiliares
+        int c1 = 0, c2 = 0, incr = 0;
+        float count1 = 0, count2 = 0;
         double v1;
         string []sismoneda = new string[] {"RD$", "USD", "€" };
+
         public ConvertMonedas()
         {
             InitializeComponent();
@@ -88,12 +106,12 @@ namespace Calculadoras
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            int.TryParse(textBox1.Text, out count1);
+            float.TryParse(textBox1.Text, out count1);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            int.TryParse(textBox2.Text, out count2);
+            float.TryParse(textBox2.Text, out count2);
         }
 
         private void ConvertMonedas_FormClosed(object sender, FormClosedEventArgs e)
@@ -101,11 +119,26 @@ namespace Calculadoras
             Aux.scalc.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        
         private void ConvertMonedas_Load(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            //button1_Click(new object(), new EventArgs());
+            //timer2.Start();
             timer1.Start();
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 1;
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+            timer2.Stop();
             
         }
 

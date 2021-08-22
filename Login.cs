@@ -39,15 +39,12 @@ namespace Calculadoras
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //SelectCalc scalc = new SelectCalc();
-            //Hide();
-            //scalc.Show();
-            //var appExcel = new Excell.Application();
+            textBox1.Focus();
 
             try
             {
 
-                if (File.Exists(fileLocation))
+                if (File.Exists(Aux.file))
                 {
                     if (textBox1.Text == "" || textBox2.Text == "")
                     {
@@ -56,7 +53,7 @@ namespace Calculadoras
                     else
                     {
                         SLDocument ls = new SLDocument(Aux.file);
-                        //SLDocument ls = new SLDocument(lista[0]);
+                        
 
                         using (ls)
                         {
@@ -86,7 +83,7 @@ namespace Calculadoras
                             trying = 0;
                             SelectCalc scalc = new SelectCalc();
                             MessageBox.Show("Ha Iniciado Sesion correctamente\n" +
-                                "Bienvenido " + user, "Inicio Exitoso", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                "Bienvenido:    " + user, "Inicio Exitoso", MessageBoxButtons.OK, MessageBoxIcon.None);
 
                             textBox1.Text = "";
                             textBox2.Text = "";
@@ -101,6 +98,9 @@ namespace Calculadoras
                                 trying = 0;
                                 MessageBox.Show("Ha superado el numero Maximo de intentos", "Exiting...", MessageBoxButtons.OK,
                                                                             MessageBoxIcon.Information);
+                                button1.Enabled = false;
+                                textBox1.Enabled = false;
+                                textBox2.Enabled = false;
                             }
                             else
                             {
@@ -127,8 +127,9 @@ namespace Calculadoras
 
         private void Login_Load(object sender, EventArgs e)
         {
-            timer1.Start();
 
+            timer1.Start();
+           
             if(!File.Exists(Aux.file))
                 {
                     //MessageBox.Show("No se encontró la Base de Datos\n" +"Creando una.....");
@@ -271,6 +272,32 @@ namespace Calculadoras
             else
             {
                 textBox2.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == ((char)Keys.Enter))
+            {
+                button1_Click(new object(), new EventArgs());
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ((char)Keys.Enter))
+            {
+                button1_Click(new object(), new EventArgs());
             }
         }
 

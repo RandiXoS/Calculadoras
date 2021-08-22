@@ -44,7 +44,6 @@ namespace Calculadoras
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label_usu = new System.Windows.Forms.Label();
             this.label_money = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@ namespace Calculadoras
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Location = new System.Drawing.Point(67, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 21);
@@ -73,28 +73,33 @@ namespace Calculadoras
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.CadetBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(36, 273);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 23);
+            this.textBox1.Size = new System.Drawing.Size(229, 29);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(81, 462);
+            this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Location = new System.Drawing.Point(81, 480);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 51);
             this.button1.TabIndex = 2;
             this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // abonar_button
             // 
             this.abonar_button.Enabled = false;
-            this.abonar_button.Location = new System.Drawing.Point(447, 531);
+            this.abonar_button.Location = new System.Drawing.Point(422, 522);
             this.abonar_button.Name = "abonar_button";
             this.abonar_button.Size = new System.Drawing.Size(92, 50);
             this.abonar_button.TabIndex = 3;
@@ -106,7 +111,8 @@ namespace Calculadoras
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(417, 22);
+            this.label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.Location = new System.Drawing.Point(385, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 37);
             this.label2.TabIndex = 4;
@@ -114,10 +120,12 @@ namespace Calculadoras
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.CadetBlue;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.Location = new System.Drawing.Point(36, 390);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 23);
+            this.textBox2.Size = new System.Drawing.Size(229, 29);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
@@ -125,6 +133,7 @@ namespace Calculadoras
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label3.Location = new System.Drawing.Point(67, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 21);
@@ -135,7 +144,8 @@ namespace Calculadoras
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(57, 129);
+            this.label5.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label5.Location = new System.Drawing.Point(57, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 30);
             this.label5.TabIndex = 8;
@@ -145,7 +155,8 @@ namespace Calculadoras
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(438, 104);
+            this.label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label4.Location = new System.Drawing.Point(413, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 30);
             this.label4.TabIndex = 9;
@@ -153,7 +164,7 @@ namespace Calculadoras
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(324, 76);
+            this.button3.Location = new System.Drawing.Point(293, 76);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(10, 524);
             this.button3.TabIndex = 10;
@@ -175,7 +186,7 @@ namespace Calculadoras
             // 
             this.label_usu.AutoSize = true;
             this.label_usu.ForeColor = System.Drawing.Color.Red;
-            this.label_usu.Location = new System.Drawing.Point(96, 299);
+            this.label_usu.Location = new System.Drawing.Point(96, 305);
             this.label_usu.Name = "label_usu";
             this.label_usu.Size = new System.Drawing.Size(38, 15);
             this.label_usu.TabIndex = 12;
@@ -186,44 +197,41 @@ namespace Calculadoras
             // 
             this.label_money.AutoSize = true;
             this.label_money.ForeColor = System.Drawing.Color.Red;
-            this.label_money.Location = new System.Drawing.Point(96, 416);
+            this.label_money.Location = new System.Drawing.Point(96, 422);
             this.label_money.Name = "label_money";
             this.label_money.Size = new System.Drawing.Size(38, 15);
             this.label_money.TabIndex = 13;
             this.label_money.Text = "label6";
             this.label_money.Visible = false;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(19, 6);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(134, 64);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Text = "";
-            // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.CadetBlue;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(392, 207);
+            this.listBox1.ItemHeight = 21;
+            this.listBox1.Location = new System.Drawing.Point(335, 208);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(208, 169);
+            this.listBox1.Size = new System.Drawing.Size(276, 170);
             this.listBox1.TabIndex = 15;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.CadetBlue;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(392, 453);
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(367, 454);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 23);
+            this.textBox3.Size = new System.Drawing.Size(208, 29);
             this.textBox3.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(459, 410);
+            this.label6.Location = new System.Drawing.Point(434, 411);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 21);
             this.label6.TabIndex = 17;
@@ -238,9 +246,9 @@ namespace Calculadoras
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(639, 92);
+            this.panel1.Location = new System.Drawing.Point(639, 85);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 499);
+            this.panel1.Size = new System.Drawing.Size(233, 509);
             this.panel1.TabIndex = 18;
             // 
             // labelhora
@@ -308,19 +316,23 @@ namespace Calculadoras
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(424, 155);
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.button2.Location = new System.Drawing.Point(399, 144);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 37);
+            this.button2.Size = new System.Drawing.Size(135, 49);
             this.button2.TabIndex = 19;
             this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(459, 479);
+            this.label10.Location = new System.Drawing.Point(434, 486);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 15);
             this.label10.TabIndex = 20;
@@ -331,6 +343,7 @@ namespace Calculadoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(871, 593);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
@@ -338,7 +351,6 @@ namespace Calculadoras
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label_money);
             this.Controls.Add(this.label_usu);
             this.Controls.Add(this.button4);
@@ -378,7 +390,6 @@ namespace Calculadoras
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label_usu;
         private System.Windows.Forms.Label label_money;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;

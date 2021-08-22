@@ -108,7 +108,7 @@ namespace Calculadoras
             "Quincenal",
             "Mensual",
             "Anual"});
-            this.comboBox2.Location = new System.Drawing.Point(22, 279);
+            this.comboBox2.Location = new System.Drawing.Point(22, 287);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(100, 23);
             this.comboBox2.TabIndex = 5;
@@ -116,7 +116,7 @@ namespace Calculadoras
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 345);
+            this.button1.Location = new System.Drawing.Point(152, 268);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 42);
             this.button1.TabIndex = 8;
@@ -126,13 +126,13 @@ namespace Calculadoras
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(274, 54);
+            this.panel1.Location = new System.Drawing.Point(274, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 343);
+            this.panel1.Size = new System.Drawing.Size(224, 366);
             this.panel1.TabIndex = 9;
-            this.panel1.Visible = false;
             // 
             // label5
             // 
@@ -156,7 +156,8 @@ namespace Calculadoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 424);
+            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.ClientSize = new System.Drawing.Size(497, 365);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
