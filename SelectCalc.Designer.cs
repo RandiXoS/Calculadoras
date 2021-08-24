@@ -46,6 +46,7 @@ namespace Calculadoras
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ahorro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_saldo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_compuesto)).BeginInit();
@@ -294,6 +295,21 @@ namespace Calculadoras
             this.panel5.Size = new System.Drawing.Size(230, 179);
             this.panel5.TabIndex = 20;
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel2.ForeColor = System.Drawing.Color.Khaki;
+            this.linkLabel2.LinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel2.Location = new System.Drawing.Point(527, 496);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(135, 20);
+            this.linkLabel2.TabIndex = 21;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Realizar Préstamo";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // SelectCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -301,6 +317,7 @@ namespace Calculadoras
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::Calculadoras.Properties.Resources.FOndoselectcalcs;
             this.ClientSize = new System.Drawing.Size(674, 525);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -351,6 +368,7 @@ namespace Calculadoras
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
 

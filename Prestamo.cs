@@ -338,6 +338,11 @@ namespace Calculadoras
             }
         }
 
+        private void Prestamo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Aux.scalc.Show();
+        }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             SLDocument excel = new SLDocument(Directory.GetCurrentDirectory() + @"\DataBase\Usuarios_Deuda\Prestamos.xlsx");

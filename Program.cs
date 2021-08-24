@@ -36,8 +36,7 @@ namespace Calculadoras
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            Application.Run(new Ahorro());
-            //Application.Run(new SelectCalc());
+            Application.Run(new Login());
         }
 
 

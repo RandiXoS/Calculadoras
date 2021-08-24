@@ -216,5 +216,12 @@ namespace Calculadoras
             panel5.BackColor = Color.Transparent;
             panel5.Refresh();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Prestamo prestamo = new Prestamo();
+            Hide();
+            prestamo.Show();
+        }
     }
 }

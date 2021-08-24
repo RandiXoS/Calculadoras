@@ -254,63 +254,77 @@ namespace Calculadoras
             // labelhora
             // 
             this.labelhora.AutoSize = true;
+            this.labelhora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelhora.ForeColor = System.Drawing.Color.Indigo;
             this.labelhora.Location = new System.Drawing.Point(68, 369);
             this.labelhora.Name = "labelhora";
-            this.labelhora.Size = new System.Drawing.Size(37, 15);
+            this.labelhora.Size = new System.Drawing.Size(49, 21);
             this.labelhora.TabIndex = 19;
             this.labelhora.Text = "name";
             // 
             // labelfecha
             // 
             this.labelfecha.AutoSize = true;
+            this.labelfecha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelfecha.ForeColor = System.Drawing.Color.Indigo;
             this.labelfecha.Location = new System.Drawing.Point(68, 333);
             this.labelfecha.Name = "labelfecha";
-            this.labelfecha.Size = new System.Drawing.Size(37, 15);
+            this.labelfecha.Size = new System.Drawing.Size(49, 21);
             this.labelfecha.TabIndex = 19;
             this.labelfecha.Text = "name";
             // 
             // labeldeuda
             // 
             this.labeldeuda.AutoSize = true;
+            this.labeldeuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labeldeuda.ForeColor = System.Drawing.Color.Indigo;
             this.labeldeuda.Location = new System.Drawing.Point(68, 194);
             this.labeldeuda.Name = "labeldeuda";
-            this.labeldeuda.Size = new System.Drawing.Size(37, 15);
+            this.labeldeuda.Size = new System.Drawing.Size(49, 21);
             this.labeldeuda.TabIndex = 4;
             this.labeldeuda.Text = "name";
             // 
             // labelnombre
             // 
             this.labelnombre.AutoSize = true;
+            this.labelnombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelnombre.ForeColor = System.Drawing.Color.Indigo;
             this.labelnombre.Location = new System.Drawing.Point(68, 59);
             this.labelnombre.Name = "labelnombre";
-            this.labelnombre.Size = new System.Drawing.Size(37, 15);
+            this.labelnombre.Size = new System.Drawing.Size(49, 21);
             this.labelnombre.TabIndex = 3;
             this.labelnombre.Text = "name";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(56, 287);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 15);
+            this.label9.Size = new System.Drawing.Size(113, 21);
             this.label9.TabIndex = 2;
             this.label9.Text = "Ultima cuota:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(56, 134);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 15);
+            this.label8.Size = new System.Drawing.Size(117, 21);
             this.label8.TabIndex = 1;
             this.label8.Text = "Deuda Actual:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(68, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 15);
+            this.label7.Size = new System.Drawing.Size(77, 21);
             this.label7.TabIndex = 0;
             this.label7.Text = "Nombre:";
             // 
@@ -366,6 +380,7 @@ namespace Calculadoras
             this.Controls.Add(this.label1);
             this.Name = "Prestamo";
             this.Text = "Prestamo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Prestamo_FormClosed);
             this.Load += new System.EventHandler(this.Prestamo_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

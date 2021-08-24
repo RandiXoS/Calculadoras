@@ -55,8 +55,13 @@ namespace Calculadoras
 
         private void Deuda_Load(object sender, EventArgs e)
         {
-            timer1.Start();
             Resetear();
+            SelectInteres.SelectedIndex = 0;
+            SelectPago.SelectedIndex = 0;
+            SelectPeriodo.SelectedIndex = 0;
+
+            timer1.Start();
+            
             
         }
 
@@ -145,18 +150,23 @@ namespace Calculadoras
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            //readperiodo = (readperiodo < 1) ? 0 : readperiodo;
+            //readinteres = (readinteres < 1) ? 0 : readinteres;
+            //readcapital = (readcapital < 1) ? 0 : readcapital;
+
             P = (readperiodo * countPeriodo) / countInteres;
             CI = readcapital;
             //resuelve problema al dividir 365/30
             if (readperiodo == 12 && opcperiodo == 2) { P++; }
 
             CF = CI * Convert.ToDecimal((P * I)) + CI;
-            pagofinal = CF / (Convert.ToDecimal((countPeriodo/countPago)));
-
+            //pagofinal = CF / (Convert.ToDecimal((countPeriodo/countPago)));
+            pagofinal = Convert.ToDecimal((countPeriodo * readperiodo) / countPago);
 
             richTextBox1.Show();
             richTextBox1.Text = "Capital Final: " + (int)CF + "\n";
-            richTextBox1.Text += "Pago(s): " + decimal.Round(pagofinal, 2) + "\n";
+            richTextBox1.Text += "Número de Pago(s): " + decimal.Round(pagofinal, 2) + "\n";
         }
 
         public Deuda()

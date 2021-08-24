@@ -13,7 +13,7 @@ namespace Calculadoras
         int capitalinit = 0, adding = 0, plazo = 0, interest = 0;
         int periodadding = 0, countperiod = 0, c = 0;
         double i = 0, ic = 0, it = 0, periodcapital = 0;
-
+        string moneda = "$";
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             int.TryParse(textBox1.Text, out capitalinit);
@@ -45,23 +45,23 @@ namespace Calculadoras
 
                 //////Aportaciones
                 periodadding += adding;
-                dataGridView1.Rows[a].Cells[1].Value = periodadding;
+                dataGridView1.Rows[a].Cells[1].Value = periodadding.ToString("N0") + " " + moneda; 
 
                 ////Interes
                 ic = i * periodcapital;
                 it += ic;
                 
                
-                dataGridView1.Rows[a].Cells[2].Value = it;
+                dataGridView1.Rows[a].Cells[2].Value = ((int)it).ToString("N0") + " " + moneda;
 
                 //capital
                 
                 periodcapital += adding + ic;
-                dataGridView1.Rows[a].Cells[3].Value = periodcapital;
+                dataGridView1.Rows[a].Cells[3].Value = ((int)periodcapital).ToString("N0") + " " + moneda; 
             }
-            label9.Text = (periodadding + capitalinit).ToString("N0");
-            label10.Text = ((int)it).ToString("N0");
-            label11.Text = ((int)periodcapital).ToString("N0");
+            label9.Text = (periodadding + capitalinit).ToString("N0") + " " + moneda;
+            label10.Text = ((int)it).ToString("N0") + " " + moneda;
+            label11.Text = ((int)periodcapital).ToString("N0") + " " + moneda;
 
             panel1.Show();
         }

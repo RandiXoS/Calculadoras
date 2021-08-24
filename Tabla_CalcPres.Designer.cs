@@ -31,6 +31,8 @@ namespace Calculadoras
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -99,22 +101,33 @@ namespace Calculadoras
             // 
             this.DatosTabla.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             this.DatosTabla.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.DatosTabla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DatosTabla.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.DatosTabla.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DatosTabla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.DatosTabla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DatosTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DatosTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnPay,
             this.ColumnCuota,
             this.ColumnInteres,
             this.ColumnSaldo});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DatosTabla.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DatosTabla.DefaultCellStyle = dataGridViewCellStyle3;
             this.DatosTabla.GridColor = System.Drawing.SystemColors.Desktop;
             this.DatosTabla.Location = new System.Drawing.Point(12, 74);
             this.DatosTabla.MultiSelect = false;
@@ -124,7 +137,7 @@ namespace Calculadoras
             this.DatosTabla.RowTemplate.Height = 25;
             this.DatosTabla.RowTemplate.ReadOnly = true;
             this.DatosTabla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DatosTabla.Size = new System.Drawing.Size(522, 362);
+            this.DatosTabla.Size = new System.Drawing.Size(547, 273);
             this.DatosTabla.TabIndex = 7;
             this.DatosTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -173,6 +186,7 @@ namespace Calculadoras
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.CadetBlue;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(197, 14);
             this.label5.Name = "label5";
@@ -188,9 +202,9 @@ namespace Calculadoras
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(608, 42);
+            this.panel1.Location = new System.Drawing.Point(584, 74);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 273);
+            this.panel1.Size = new System.Drawing.Size(279, 273);
             this.panel1.TabIndex = 9;
             this.panel1.Visible = false;
             // 

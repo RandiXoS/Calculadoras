@@ -74,3 +74,4 @@ C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.c
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.dll
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.pdb
 C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.genruntimeconfig.cache
+C:\Users\Randi\Desktop\Bussiness\Calcv2.0\obj\Debug\netcoreapp3.1\Calculadoras.csproj.AssemblyReference.cache

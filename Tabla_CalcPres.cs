@@ -34,8 +34,8 @@ namespace Calculadoras
 
             DatosTabla.Rows.Add((int)p - 1);
 
-            //float auxcuota = (float)InfoTable.readAmount / InfoTable.readTime;
-            cuota = InfoTable.readAmount * ((Math.Pow((1 + i), p) * i) / (Math.Pow((1 + i), p) - 1));
+            float cuota = (float)InfoTable.readAmount / InfoTable.readTime;
+            //cuota = InfoTable.readAmount * ((Math.Pow((1 + i), p) * i) / (Math.Pow((1 + i), p) - 1));
             
             //Bucle para mostrar Información
             for (int i1 = 1; i1 <= p; i1++)
@@ -52,7 +52,7 @@ namespace Calculadoras
             }
             tmonto.Text = InfoTable.readAmount.ToString("N0") + " $";
             tint.Text = ((int)it).ToString("N0") + " $";
-            tmontofinal.Text = ((int)(cuota * p)).ToString("N0") + " $";
+            tmontofinal.Text = ((int)(InfoTable.readAmount + it)).ToString("N0") + " $";
             panel1.Show();
         }
         private void tabla_Paint(object sender, PaintEventArgs e)
